@@ -1,0 +1,341 @@
+body { 
+  background-image: url(../tarea/imagenes/fondo.png);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff0f6, #ffeef5);
+  color: #4a154b;
+}
+
+header {
+  background: linear-gradient(to right, #e91e63, #f06292);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(233, 30, 99, 0.2);
+}
+
+.logo {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #f8bbd0;
+  color: #880e4f;
+}
+
+.hero {
+  background: url('../tarea/imagenes/fondo.png') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: #4a154b;
+  text-align: center;
+  background-blend-mode: soft-light;
+}
+
+@keyframes moverLadoALado {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.hero h2 {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moverLadoALado 10s linear infinite;
+  color: #d63384;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 2px #f8bbd0;
+}
+
+.hero p {
+  color: #4a154b;
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.h2-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+footer {
+  background-color: #d81b60;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#servicios h2{
+  background-color: #ffcdd4;
+}
+
+.servicio-botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.servicio-botones a {
+  text-align: center;
+  text-decoration: none;
+  color: #e91e63;
+  font-weight: bold;
+  border: 2px solid #e91e63;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.servicio-botones a:hover {
+  background: linear-gradient(135deg, #f8bbd0, #f06292);
+  color: white;
+  transform: scale(1.05);
+}
+
+.servicio-botones img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+#serviciosadi {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  text-align: left;
+  background: url('../tarea/imagenes/fondo3.jpg') no-repeat center center/cover;
+}
+
+.serviciosadi-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.serviciosadi {
+  background: linear-gradient(to right, #fff5f9, #ffe0ef);
+  border: 2px solid #f48fb1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 800px;
+  box-shadow: 0 4px 12px rgba(240, 98, 146, 0.2);
+}
+
+.serviciosadi h3 {
+  margin-bottom: 10px;
+  color: #e91e63;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b03060;
+}
+
+.serviciosadi button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.serviciosadi button:hover {
+  background-color: #c2185b;
+}
+
+.precio-boton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#reseñas {
+  background-color: #ffcdd4;
+  padding: 30px 20px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#reseñas h2 {
+  text-align: center;
+  color: #d63384;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.reseña {
+  background-color: #fff0f6;
+  border-left: 5px solid #e83e8c;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px rgba(232, 62, 140, 0.1);
+  text-align: left;
+}
+
+.reseña .nombre {
+  display: block;
+  font-weight: bold;
+  color: #b03060;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.reseña .estrellas {
+  color: #f7c948;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.reseña p {
+  font-style: italic;
+  color: #6f1d4c;
+  margin: 0;
+}
+
+#reseñas h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: #b03060;
+}
+
+#form-reseña {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#form-reseña textarea,
+#form-reseña input {
+  width: 90%;
+  max-width: 500px;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  background-color: #fff5f9;
+  font-family: inherit;
+  color: #4a154b;
+}
+
+#form-reseña button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#form-reseña button:hover {
+  background-color: #c2185b;
+}
+
+#galeria {
+  background-color: #fdb4bf;
+  padding: 30px 20px;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+#galeria h2 {
+  color: #d63384;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-box {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #f8bbd0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(232, 62, 140, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.video-box video:hover {
+  transform: scale(1.03);
+}
+
+#contacto {
+  background-color: #fff0f6;
+  color: #b03060;
+}
+
+#contacto h2 {
+  color: #d63384;
+}
+
+#horarios {
+  color: #b03060;
+  background-color: #fff9fc;
+}
+
+#horarios h2 {
+  color: #d63384;
+}

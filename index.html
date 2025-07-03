@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salón Belleza</title>
+  <link rel="stylesheet" href="../tarea/salonbelleza.css" />
+  <link rel="icon" type="image/x-icon" href="" />
+</head>
+<body>
+  <header>
+    <img src="../tarea/imagenes/logosalon.png" alt="Logo del Salón" class="logo" />
+    <h1>Cristel Beauty</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#serviciosadi">Destacados</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="inicio" class="hero">
+  <div class="h2-container">
+    <h2>Bienvenida al lugar donde tu belleza brilla</h2>
+  </div>
+  <p>
+    En el Salón de Cristel Beauty nos especializamos en realzar tu belleza natural
+    con los mejores productos y servicios del mercado. Nuestro equipo de profesionales
+    está listo para brindarte una experiencia relajante, personalizada y de alta calidad.
+  </p>
+  <p>
+    Estamos comprometidos a ofrecerte resultados excepcionales
+    que te harán sentir y lucir espectacular. ¡Haz tu cita hoy y transforma tu estilo!
+  </p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <p>Selecciona el servicio que deseas conocer:</p>
+
+  <div class="servicio-botones">
+    <a href="#corte">
+      <img src="../tarea/imagenes/cortepelo.jpg" alt="Corte de cabello" />
+      <span>Corte</span>
+    </a>
+    <a href="#maquillaje">
+      <img src="../tarea/imagenes/maquillaje.jpg" alt="Maquillaje" />
+      <span>Maquillaje</span>
+    </a>
+    <a href="#uñas">
+      <img src="../tarea/imagenes/uñas.jpg" alt="Uñas" />
+      <span>Uñas</span>
+    </a>
+    <a href="#tratamiento">
+      <img src="../tarea/imagenes/tratamiento.jpg" alt="Tratamiento facial" />
+      <span>Tratamiento facial</span>
+    </a>
+  </div>
+</section>
+
+<section id="serviciosadi">
+  <h2>Servicios Adicionales</h2>
+  <div class="serviciosadi-contenedor">
+    <div class="serviciosadi">
+      <h3>Masaje relajante</h3>
+      <div class="precio-boton">
+        <p>Disfruta de un momento de tranquilidad y bienestar.</p>
+        <p class="precio">Lps 800.00</p>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <div class="serviciosadi">
+      <h3>Alisado</h3>
+      <div class="precio-boton">
+        <p>Cabello liso en menos tiempo.</p>
+        <p class="precio">L. 1100.00</p>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <div class="serviciosadi">
+      <h3>Coloración de cabello</h3>
+      <div class="precio-boton">
+        <p>Renueva tu look con un color vibrante y duradero.</p>
+        <p class="precio">L. 1200.00</p>
+        <button>Reservar</button>
+      </div>
+    </div>
+    <div class="serviciosadi">
+      <h3>Peinado express</h3>
+      <div class="precio-boton">
+        <p>Un peinado rápido para cualquier ocasión.</p>
+        <p class="precio">L. 450.00</p>
+        <button>Reservar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="videos">
+    <div class="video-box">
+      <video controls>
+        <source src="../tarea/imagenes/video1.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="video-box">
+      <video controls>
+        <source src="../tarea/imagenes/video2.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="video-box">
+      <video controls>
+        <source src="../tarea/imagenes/video3.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>
+
+<section id="reseñas">
+  <h2>Reseñas</h2>
+
+  <div class="reseña">
+    <span class="nombre">Ana M.</span>
+    <div class="estrellas">★★★★★</div>
+    <p>"Me encantó el trato y el resultado🤩. Volveré sin duda."</p>
+  </div>
+
+  <div class="reseña">
+    <span class="nombre">Karla R.</span>
+    <div class="estrellas">★★★★★</div>
+    <p>"Excelente en sus conocimientos y en todo lo que hacen."</p>
+  </div>
+
+  <div class="reseña">
+    <span class="nombre">Laura G.</span>
+    <div class="estrellas">★★★★★</div>
+    <p>"Pedí un peinado express y quedé lista en minutos. ¡Ame!"👌</p>
+  </div>
+
+  <h3>Agrega tu reseña</h3>
+  <form id="form-reseña">
+    <textarea id="texto-reseña" rows="3" placeholder="Escribe tu reseña..." required></textarea><br>
+    <input type="text" id="nombre-usuario" placeholder="Tu nombre" required><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Email: contacto@beauty.com</p>
+    <p>Teléfono: +504 9999-9999</p>
+  </section>
+
+  <section id="horarios">
+  <h2>Horarios de apertura</h2>
+  <p>lunes
+08:00 - 13:00
+14:00 - 17:00
+<br>
+martes
+08:00 - 13:00
+14:00 - 17:00
+<br>
+miércoles
+08:00 - 13:00
+14:00 - 17:00
+<br>
+jueves
+08:00 - 13:00
+14:00 - 17:00
+<br>
+viernes
+08:00 - 13:00
+14:00 - 17:00
+<br>
+sábado
+08:00 - 13:00
+14:00 - 17:00</p>
+
+  <footer>
+    <p>&copy; 2025 Cristel Beauty - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
